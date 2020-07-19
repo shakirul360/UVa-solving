@@ -1,16 +1,16 @@
-N=int(input("Please enter the number of test cases: "))
+N=int(input())
 for i in range(N):
-    L = int(input("Please enter the length of the train:"))
+    L = int(input())
     Train_order = []
     for j in range(L):
         num = int(input())
         Train_order.append(num)
-    for train in range(len(Train_order)-1):
-        count = 0 
-        if Train_order[train+1] < Train_order[train]:
-            Train_order[train+1],Train_order[train] = Train_order[train],Train_order[train+1]
-            count+=1
-        else:
-            pass    
-    print("Optimal train swapping takes {} swaps.".format(count))    
-        
+        count = 0
+    for t in range(len(Train_order)-1):    
+        for train in range(len(Train_order)-1): 
+            if Train_order[train+1] < Train_order[train]:
+                Train_order[train+1],Train_order[train] = Train_order[train],Train_order[train+1]
+                count+=1
+            else:
+                pass    
+    print("Optimal train swapping takes {} swaps.".format(count))
