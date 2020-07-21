@@ -15,11 +15,11 @@ def Cycle(i,j):
                 else:
                     n = (3*n)+1
 
-            #print(nums)
+            print(nums)
         
     
-    if(max_length <len(nums)):
-        max_length = len(nums)
+        if(max_length <len(nums)):
+            max_length = len(nums)
         
     return max_length
 
