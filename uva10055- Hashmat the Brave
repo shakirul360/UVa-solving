@@ -1,0 +1,13 @@
+
+while True:
+    try:
+        i , j  = map(int, input().split())
+        
+        diff = abs(i-j)
+        print(diff)
+        
+        
+    except:
+        break
+        
+    
