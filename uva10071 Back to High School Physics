@@ -1,0 +1,11 @@
+def displacement(v,t):
+    disp = 2*v*t
+    return disp
+
+while True:
+    try:
+        v,t = map(int,input().split())
+        print(displacement(v,t))
+    except:
+        break
+        
