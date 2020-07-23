@@ -1,0 +1,11 @@
+tcases = int(input())
+
+for i in range(tcases):
+    arr = list(map(int,input().split()))
+    mini = min(arr)
+    maxi = max(arr)
+    
+    for j in arr:
+        if j>mini and j< maxi:
+            print("Case {}: {}". format((i+1),j))
+    
