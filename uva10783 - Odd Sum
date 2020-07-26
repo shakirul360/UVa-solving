@@ -1,0 +1,15 @@
+T = int(input())
+
+for j in range(T):
+    a = int(input())
+    b = int(input())
+    
+    total = 0
+    for i in range(a,b+1):
+        if i%2 == 0:
+            pass
+        else:
+            total = total + i
+     
+    #print(total)
+    print("Case {}: {}".format((j+1),total))
