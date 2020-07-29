@@ -1,21 +1,17 @@
-def Palendrome(num):
-    count = 0
-    #print(num)
-    rev = num[::-1]
-    #print(rev)
-    if num == rev:
-        pass
-    else:
-        num = int(num) + int(rev)
-        count += 1
-        Palendrome(str(num))
-    
+n = int(input())
 
-
-T = int(input())
-for _ in range(T):
-    num = input()
-    print(Palendrome(num))
+for i in range(n):
+	m = int(input())
+	count = 0
+	
+	while True:
+		str_m = str(m)
+		if str_m == str_m[::-1]:
+			break
+		m += int(str_m[::-1])
+		count += 1
+	
+	print(count, m)
     
 
     
