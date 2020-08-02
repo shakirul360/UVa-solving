@@ -1,0 +1,16 @@
+def BrightStudents(arr,n):
+    count = 0
+    avg = sum(arr)/n
+    for i in arr:
+        if i > avg:
+            count +=1
+    result = (count/n) * 100
+    print("{}%".format("%.3f" % result))
+  
+  """%.3f" % 40  ---- This helps us print even 40 as 40.000 by rounding it up using string Formatting"""
+
+T = int(input())
+for _ in range(T):
+    arr = list(map(int,input().split()))
+    n = arr.pop(0)
+    BrightStudents(arr,n)
