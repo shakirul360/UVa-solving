@@ -1,0 +1,12 @@
+while True:
+    try:
+        n,k = map(int,input().split())
+        total = n + (n // k)
+        get = (n // k) + (n % k)
+    
+        while get >= k:
+            total = total + (get // k)
+            get = get // k + get % k
+        print(total)
+    except:
+        break
