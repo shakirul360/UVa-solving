@@ -1,10 +1,9 @@
 t = int(input())
-x = input() or 0
-for _ in range(t):
+#x = input() or 0
+y = input() or 0
+for q in range(t):
     a = int(input())
-    y = input() or 0
     f = int(input())
-    
     for u in range(f):
         for i in range(a):
             j = str(i)
@@ -12,3 +11,9 @@ for _ in range(t):
         for i in range(a,0,-1):
             j = str(i)
             print(j * i)
+    if q != (t-1):
+        y = input() or 0
+        print(" ")
+    else:
+        print(" ")
+        print(" ")
