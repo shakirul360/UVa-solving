@@ -13,7 +13,3 @@ for q in range(t):
             print(j * i)
     if q != (t-1):
         y = input() or 0
-        print(" ")
-    else:
-        print(" ")
-        print(" ")
