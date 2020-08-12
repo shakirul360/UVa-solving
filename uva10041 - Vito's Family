@@ -1,0 +1,12 @@
+tcase = int(input())
+for i in range(tcase):
+    arr = list(map(int,input().split()))
+    n = arr.pop(0)
+    #print(n)
+    arr.sort()
+    mid = arr[n // 2]
+    ans = 0
+    for i in arr:
+        ans += abs(i - mid)
+    print(ans)
+    
