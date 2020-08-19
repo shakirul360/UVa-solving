@@ -1,0 +1,9 @@
+tcase = int(input())
+for i in range(tcase):
+    l, w, h = map(int,input().split())
+    if l <= 20 and w <= 20 and h <= 20:
+        print("Case {}: good".format(i + 1))
+    else:
+        print("Case {}: bad".format(i + 1))
+        
+        
