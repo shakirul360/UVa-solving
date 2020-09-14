@@ -1,8 +1,0 @@
-T = int(input())
-count = 1
-for _ in range(T):
-    arr = list(map(int,input().split()))
-    n = arr[0]
-    res = max(arr)
-    print("Case {}: {}".format(count,res))
-    count+=1
