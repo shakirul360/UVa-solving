@@ -6,15 +6,19 @@ while True:
         x = input()
     except EOFError:
         break
-    #print(book_prices)
     
-    a, b  = None, None
-    abss = 1000001
-    for i in book_prices:
-        j = total - i
-        if j in book_prices:
-            if abs(i-j) < abss:
-                a, b = i,j
-                abss = abs(i - j)
-    print("Peter should buy books whose prices are {} and {}.".format(a,b))
+    i = 0
+    j = n - 1
+    a, b = 0, 0
+    while i < j:
+        if(book_prices[i] + book_prices[j] < total):
+            i += 1
+        elif book_prices[i] + book_prices[j] == total:
+            a = i
+            b = j
+            i += 1
+            j -= 1
+        else:
+            j -= 1    
+    print("Peter should buy books whose prices are {} and {}.".format(book_prices[a],book_prices[b]))
     print(x)
