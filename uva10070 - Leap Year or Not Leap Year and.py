@@ -8,11 +8,11 @@ def year_type(year):
     if year % 15 == 0:
         print("This is huluculu festival year.")
         flag = 1
-    if year % 55 == 0 and leap_bool == true:
+    if year % 55 == 0 and leap_bool == True:
         print("This is bulukulu festival year.")
     if flag == 0:
         print("This is an ordinary year.")
-        
+
 #year_type(2000)
 #year_type(3600)
 #year_type(4515)
@@ -22,7 +22,7 @@ while True:
     try:
         year = int(input())
         arr.append(year)
-    except:
+    except EOFError:
         for y in range(len(arr)):
             if y != (len(arr) - 1):
                 year_type(arr[y])
