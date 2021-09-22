@@ -1,0 +1,11 @@
+dic = {}
+n = int(input())
+for i in range(n):
+    string = input()
+    dic[string] = input()
+
+query_n = int(input())
+for j in range(query_n):
+    query = input()
+    if query in dic:
+        print(dic[query])
