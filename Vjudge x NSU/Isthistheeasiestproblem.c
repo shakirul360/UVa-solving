@@ -2,14 +2,15 @@
 
 int main(){
 
-    int tcase, a, b, c, i;
+    int tcase;
+    long long a, b, c, i;
 
     scanf("%d", &tcase);
 
     for (i = 0; i < tcase; i++){
-        scanf("%d %d %d", &a, &b, &c);
+        scanf("%lld %lld %lld", &a, &b, &c);
 
-        if (a + b < c || b + c < a || c + a < b){
+        if (a + b <= c || b + c <= a || c + a <= b){
             printf("Case %d: Invalid\n", i + 1);
         } else if (a == b && b == c){
             printf("Case %d: Equilateral\n", i + 1);
